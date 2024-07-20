@@ -44,6 +44,7 @@ class FamilyTypePicker extends Component {
       nullLabel = null,
     } = this.props;
     let options = !!familyTypes ? familyTypes.map((v) => ({ value: v, label: this.formatSuggestion(v) })) : [];
+    options = options.filter(option => !("PST".includes(option.value)))
     if (withNull) {
       options.unshift({ value: null, label: this.formatSuggestion(null) });
     }

@@ -200,7 +200,7 @@ class FamilyMasterPanel extends FormPanel {
             />
           </Grid>
           <Grid item xs={1} className={classes.item}>
-            <FormControlLabel
+            {/* <FormControlLabel
               control={
                 <Checkbox
                   color="primary"
@@ -210,7 +210,7 @@ class FamilyMasterPanel extends FormPanel {
                 />
               }
               label={formatMessage(intl, "insuree", "Family.poverty")}
-            />
+            /> */}
           </Grid>
           <Divider />
         </Grid>

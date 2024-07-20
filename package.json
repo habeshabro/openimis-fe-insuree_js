@@ -3,7 +3,7 @@
   "version": "1.4.0-rc3",
   "license": "AGPL-3.0-only",
   "description": "openIMIS Frontend Insuree reference module",
-  "repository": "openimis/openimis-fe-insuree_js",
+  "repository": "habeshabro/openimis-fe-insuree_js",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "engines": {
