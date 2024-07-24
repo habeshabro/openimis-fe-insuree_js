@@ -43,6 +43,7 @@ class InsureeGenderPicker extends Component {
       withNull = false,
     } = this.props;
     let options = !!insureeGenders ? insureeGenders.map((v) => ({ value: v, label: this.formatSuggestion(v) })) : [];
+    options = options.filter(option => option.value != 'O')
     if (withNull) {
       options.unshift({ value: null, label: this.formatSuggestion(null) });
     }
