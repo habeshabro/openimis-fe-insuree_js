@@ -43,6 +43,7 @@ class IdentificationTypePicker extends Component {
     let options = !!identificationTypes
       ? identificationTypes.map((v) => ({ value: v, label: this.formatSuggestion(v) }))
       : [];
+    options = options.filter(option => option.value != 'V')
     if (withNull) {
       options.unshift({ value: null, label: this.formatSuggestion(null) });
     }
